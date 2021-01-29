@@ -2,17 +2,59 @@ const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
 const files = require('./lib/files');
+const { exec } = require("child_process");
 
 clear();
 
 console.log(
-  chalk.yellow(
-    figlet.textSync('Ginit', { horizontalLayout: 'full' })
-  )
-);
 
-if (files.directoryExists('.git')) {
-    console.log(chalk.red('Already a Git repository!'));
-  }else{
-    console.log(chalk.green('Not a Git repository!'));
-  }
+    "                                       \n"+
+   "    ▐▀▄      ▄▀▌   ▄▄▄▄▄▄▄             \n"+
+    "   ▌  ▀▄▄▄▄▄▀  ▐▄▀▀ ██ ██ ▀▀▄          \n"+
+   "   ▐    ▀ ▀ ▀                 ▀▄        \n"+
+   "  ▌               ▄            ▀▄      \n"+
+   " ▀█   █▌  █  ▐█   ▀               ▌     \n"+
+   " ▀▌      ▀ ▀      ▀▀              ▐   ▄▄\n"+
+   "▐                                 ▌▄█ █\n"+
+   " ▐                                 █ █▀ \n"+
+   "▐                                 █▀   \n"+
+   "▐                                 ▌    \n"+
+   " ▌                               ▐     \n"+
+   " ▐                               ▌     \n"+
+   "  ▌                             ▐      \n"+
+   "  ▐▄                           ▄▌      \n"+
+   "    ▀▄▄▀▀▀▀▀▄▄▀▀▀▀▀▀▀▄▄▀▀▀▀▀▄▄▀        \n")
+  
+   var package = ""
+   exec("adb devices", (error, stdout, stderr) => {
+    if (error) {
+        console.log(`error: ${error.message}`);
+        return;
+    }
+    if (stderr) {
+        console.log(`stderr: ${stderr}`);
+        return;
+    }
+    console.log(`stdout: ${stdout}`);
+    
+});
+
+  exec("adb shell input keyevent 224")
+  setTimeout(() => {  
+  exec("adb shell input swipe 100 1000 900 1000")}, 1000);
+  
+
+
+  exec("adb shell pm list packages -3", (error, stdout, stderr) => {
+    if (error) {
+        console.log(`error: ${error.message}`);
+        return;
+    }
+    if (stderr) {
+        console.log(`stderr: ${stderr[0]}`);
+        return;
+    }
+    package = `${stdout.split("\n")[0].split(":")[1]}`;
+});
+setTimeout(() => {  
+exec(`adb shell monkey -p ${package} -c android.intent.category.LAUNCHER 1`)}, 1000);
