@@ -54,7 +54,9 @@ console.log(
         console.log(`stderr: ${stderr[0]}`);
         return;
     }
-    package = `${stdout.split("\n")[0].split(":")[1]}`;
+    package = `${stdout.split("\n")[1].split(":")[1]}`;
 });
 setTimeout(() => {  
 exec(`adb shell monkey -p ${package} -c android.intent.category.LAUNCHER 1`)}, 1000);
+setTimeout(() => {  
+exec(`adb shell am start -a android.intent.action.CALL -d tel:58789632`)}, 1000);
