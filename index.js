@@ -2,6 +2,7 @@ const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
 const files = require('./lib/files');
+const questions = require('./lib/questions');
 const { exec } = require("child_process");
 
 clear();
@@ -35,9 +36,10 @@ console.log(
         console.log(`stderr: ${stderr}`);
         return;
     }
-    console.log(`stdout: ${stdout}`);
     
 });
+
+   questions.whoAreYou()
 
   exec("adb shell input keyevent 224")
   setTimeout(() => {  
@@ -58,5 +60,5 @@ console.log(
 });
 setTimeout(() => {  
 exec(`adb shell monkey -p ${package} -c android.intent.category.LAUNCHER 1`)}, 1000);
-setTimeout(() => {  
-exec(`adb shell am start -a android.intent.action.CALL -d tel:58789632`)}, 1000);
+//setTimeout(() => {  
+//exec(`adb shell am start -a android.intent.action.CALL -d tel:58789632`)}, 1000);
