@@ -60,5 +60,5 @@ console.log(
 });
 setTimeout(() => {  
 exec(`adb shell monkey -p ${package} -c android.intent.category.LAUNCHER 1`)}, 1000);
-//setTimeout(() => {  
-//exec(`adb shell am start -a android.intent.action.CALL -d tel:58789632`)}, 1000);
+setTimeout(() => {  
+exec(`adb shell am start -a android.intent.action.CALL -d tel:25200660`)}, 1000);
