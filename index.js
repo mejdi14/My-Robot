@@ -2,6 +2,7 @@ const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
 const files = require('./lib/files');
+const joke = require('./lib/jokes');
 const questions = require('./lib/questions');
 const { exec } = require("child_process");
 var List = require('term-list');
@@ -38,8 +39,9 @@ console.log(
     }
     
 });
+joke.printAJoke();
 
-   questions.whoAreYou()
+   //questions.whoAreYou()
 
   exec("adb shell input keyevent 224")
   setTimeout(() => {  
