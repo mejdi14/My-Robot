@@ -4,15 +4,17 @@ const figlet = require('figlet');
 const files = require('./lib/files');
 const options = require('./lib/options');
 const logo = require('./lib/my_robot_logo');
+const mobile = require('./lib/open_phone');
 const joke = require('./lib/jokes');
 const questions = require('./lib/questions');
 const { exec } = require("child_process");
 
 clear();
 
+//options.showOptionsList();
+await mobile.openPhoneAndSwipeToUnlock()
+
 logo.showRobotFace();
-options.showOptionsList();
-  
  /*  var package = ""
    exec("adb devices", (error, stdout, stderr) => {
     if (error) {
