@@ -7,50 +7,52 @@ const logo = require('./lib/my_robot_logo');
 const mobile = require('./lib/open_phone');
 const joke = require('./lib/jokes');
 const questions = require('./lib/questions');
-const { exec } = require("child_process");
+const {exec} = require("child_process");
 
 clear();
 
 //options.showOptionsList();
-await mobile.openPhoneAndSwipeToUnlock()
+(async function () {
+    console.log("result",await mobile.openPhoneAndSwipeToUnlock());
 
-logo.showRobotFace();
- /*  var package = ""
-   exec("adb devices", (error, stdout, stderr) => {
-    if (error) {
-        console.log(`error: ${error.message}`);
-        return;
-    }
-    if (stderr) {
-        console.log(`stderr: ${stderr}`);
-        return;
-    }
-    
+    logo.showRobotFace();
+
+})();
+
+/*  var package = ""
+  exec("adb devices", (error, stdout, stderr) => {
+   if (error) {
+       console.log(`error: ${error.message}`);
+       return;
+   }
+   if (stderr) {
+       console.log(`stderr: ${stderr}`);
+       return;
+   }
+
 });*/
 //joke.printAJoke();
 
-   //questions.whoAreYou()
+//questions.whoAreYou()
 
-  /*
-  
+/*
 
 
-  exec("adb shell pm list packages -3", (error, stdout, stderr) => {
-    if (error) {
-        console.log(`error: ${error.message}`);
-        return;
-    }
-    if (stderr) {
-        console.log(`stderr: ${stderr[0]}`);
-        return;
-    }
-    package = `${stdout.split("\n")[1].split(":")[1]}`;
+
+exec("adb shell pm list packages -3", (error, stdout, stderr) => {
+  if (error) {
+      console.log(`error: ${error.message}`);
+      return;
+  }
+  if (stderr) {
+      console.log(`stderr: ${stderr[0]}`);
+      return;
+  }
+  package = `${stdout.split("\n")[1].split(":")[1]}`;
 });*/
 
 
-
-
-/*setTimeout(() => {  
+/*setTimeout(() => {
 exec(`adb shell monkey -p ${package} -c android.intent.category.LAUNCHER 1`)}, 1000);
 setTimeout(() => {  
 exec(`adb shell am start -a android.intent.action.CALL -d tel:25200660`)}, 1000);*/
