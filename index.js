@@ -4,10 +4,11 @@ const mobile = require('./lib/open_phone');
 const weather = require('./lib/weather');
 const joke = require('./lib/jokes');
 const code_wars = require('./lib/code_wars');
-const code_wars = require('./lib/sites_blocker');
+const sites_blocker = require('./lib/sites_blocker');
 clear();
 (async function () {
-    await code_wars.checkForCodeWarsTasks()
+    await sites_blocker.hostFileModify()
+   // await code_wars.checkForCodeWarsTasks()
  /*   await weather.getWeatherApi();
     await joke.printAJoke();
     await mobile.openPhoneAndSwipeToUnlock();
