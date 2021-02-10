@@ -7,7 +7,9 @@ const code_wars = require('./lib/code_wars');
 const sites_blocker = require('./lib/sites_blocker');
 clear();
 (async function () {
-    await sites_blocker.hostFileModify()
+    await sites_blocker.checkIfAlreadyBlocked().then(function (result){
+        console.log("your result is " + result)
+    })
    // await code_wars.checkForCodeWarsTasks()
  /*   await weather.getWeatherApi();
     await joke.printAJoke();
