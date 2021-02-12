@@ -5,15 +5,19 @@ const weather = require('./lib/weather');
 const joke = require('./lib/jokes');
 const code_wars = require('./lib/code_wars');
 const sites_blocker = require('./lib/sites_blocker');
-var clockwork = require('clockwork')({key:'your clockwork key here'});
+const ora = require('ora');
+const chalk = require('chalk');
+
+//const spinner = ora(`Loading ${chalk.red('unicorns')}`).start();
 
 
-clear();
+//clear();
 (async function () {
     await sites_blocker.checkIfAlreadyBlocked().then(function (result) {
         console.log("your result is " + result)
     })
-    // await code_wars.checkForCodeWarsTasks()
+     var hasBeenDone = await code_wars.checkForCodeWarsTasks()
+     console.log(hasBeenDone)
     /*   await weather.getWeatherApi();
        await joke.printAJoke();
        await mobile.openPhoneAndSwipeToUnlock();
