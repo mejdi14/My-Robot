@@ -3,6 +3,7 @@ const logo = require('./lib/my_robot_logo');
 const mobile = require('./lib/open_phone');
 const weather = require('./lib/weather');
 const joke = require('./lib/jokes');
+const mongo = require('./database/mongo_db');
 const send_sms = require('./lib/sms_sender');
 const code_wars = require('./lib/code_wars');
 const life_goals = require('./lib/life_goals');
@@ -16,6 +17,7 @@ var inquirer = require('inquirer');
 /*     await sites_blocker.checkIfAlreadyBlocked().then(function (result) {
         console.log("your result is " + result)
     })
+    
      var hasBeenDone = await code_wars.checkForCodeWarsTasks() */
     // console.log(hasBeenDone)
     // await life_goals.showQuestions()
@@ -24,6 +26,7 @@ var inquirer = require('inquirer');
        await joke.printAJoke();
        await mobile.openPhoneAndSwipeToUnlock();
        logo.showRobotFace();*/
+       await mongo.getData()
 })();
 
 
