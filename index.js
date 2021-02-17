@@ -21,16 +21,15 @@ var inquirer = require('inquirer');
     })
     
      var hasBeenDone = await code_wars.checkForCodeWarsTasks()  */
-     await daily_meeting.startDailyMeeting()
-     await life_goals.showQuestions() 
-
+   /*   await daily_meeting.startDailyMeeting()
+     await life_goals.showQuestions()  */
   /*    console.log(hasBeenDone)
     //await send_sms.sendSms()
     /*   await weather.getWeatherApi();
        await joke.printAJoke();
        await mobile.openPhoneAndSwipeToUnlock();
        logo.showRobotFace();*/
-      // await mongo.getData()
+       await mongo.getData()
      // await todo_table.showTable()
 })();
 

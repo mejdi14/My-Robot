@@ -5,15 +5,17 @@ module.exports = {
     async getData() {
 
         const uri = constants.mongodb_uri;
+        console.log(uri)
         const client = new MongoClient(uri);
         try {
             await client.connect();
             await listDatabases(client);
         } catch (e) {
-            console.error(e);
+          //  console.error(e);
         } finally {
             await client.close();
         }
+        this.catch(console.error);
     }
 }
 
