@@ -17,9 +17,10 @@ var inquirer = require('inquirer');
 
 //clear();
 (async function () {
-    //await send_sms.sendSms()
-    await github.getGithubEvents()
-
+    await send_sms.sendSms()
+    //await github.getGithubEvents()
+    // var score = await daily_meeting.startDailyMeeting()
+    // console.log(score)
     /*   await sites_blocker.checkIfAlreadyBlocked().then(function (result) {
          console.log("your result is " + result)
      })
