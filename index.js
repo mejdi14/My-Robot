@@ -17,7 +17,8 @@ var inquirer = require('inquirer');
 
 //clear();
 (async function () {
-    await send_sms.sendSms()
+  await mobile.openPhoneAndSwipeToUnlock();
+    //await send_sms.sendSms()
     //await github.getGithubEvents()
     // var score = await daily_meeting.startDailyMeeting()
     // console.log(score)
@@ -32,7 +33,7 @@ var inquirer = require('inquirer');
     /*    console.log(hasBeenDone)
       /*   await weather.getWeatherApi();
          await joke.printAJoke();
-         await mobile.openPhoneAndSwipeToUnlock();
+         
          logo.showRobotFace();*/
     //await mongo.getData()
     // await todo_table.showTable()
