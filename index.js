@@ -17,6 +17,7 @@ var inquirer = require('inquirer');
 
 //clear();
 (async function () {
+  logo.showRobotFace();
   await mobile.openPhoneAndSwipeToUnlock();
     //await send_sms.sendSms()
     //await github.getGithubEvents()
