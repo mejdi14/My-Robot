@@ -1,6 +1,7 @@
 const clear = require('clear');
 const logo = require('./lib/my_robot_logo');
 const mobile = require('./lib/open_phone');
+const send_message = require('./lib/send_message');
 const weather = require('./lib/weather');
 const joke = require('./lib/jokes');
 //const mongo = require('./database/mongo_db');
@@ -18,7 +19,8 @@ var inquirer = require('inquirer');
 //clear();
 (async function () {
   logo.showRobotFace();
-  await mobile.openPhoneAndSwipeToUnlock();
+  //await mobile.openPhoneAndSwipeToUnlock();
+  await send_message.openWhatsappAndSendMessage()
     //await send_sms.sendSms()
     //await github.getGithubEvents()
     // var score = await daily_meeting.startDailyMeeting()
