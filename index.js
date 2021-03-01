@@ -9,6 +9,7 @@ const send_sms = require('./lib/sms_sender');
 const code_wars = require('./lib/code_wars');
 const todo_table = require('./lib/todo_table');
 const github = require('./lib/github');
+const options = require('./lib/options');
 const life_goals = require('./lib/life_goals');
 const daily_meeting = require('./lib/daily_meeting');
 const sites_blocker = require('./lib/sites_blocker');
@@ -20,7 +21,7 @@ var inquirer = require('inquirer');
 (async function () {
   logo.showRobotFace();
   //await mobile.openPhoneAndSwipeToUnlock();
-  await send_message.openWhatsappAndSendMessage()
+  await options.showQuestions()
     //await send_sms.sendSms()
     //await github.getGithubEvents()
     // var score = await daily_meeting.startDailyMeeting()
