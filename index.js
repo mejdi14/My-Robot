@@ -16,11 +16,12 @@ const ora = require('ora');
 const chalk = require('chalk');
 var inquirer = require('inquirer');
 
+
 //clear();
 (async function () {
   logo.showRobotFace();
   //await mobile.openPhoneAndSwipeToUnlock();
-  await send_message.openWhatsappAndSendMessage()
+  await send_message.openWhatsappAndSendMessage("mejdi","`hello mr mejdi`")
     //await send_sms.sendSms()
     //await github.getGithubEvents()
     // var score = await daily_meeting.startDailyMeeting()
