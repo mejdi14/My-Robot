@@ -16,13 +16,21 @@ const sites_blocker = require('./lib/sites_blocker');
 const ora = require('ora');
 const chalk = require('chalk');
 var inquirer = require('inquirer');
+const anviz = require("node-anviz");
 
 //clear();
 (async function () {
   logo.showRobotFace();
+  let request = new anviz.Request("192.168.100.17");
+request.execute("getInformation1", 1).on("error", function(err) {
+    console.info("ERROR", err);
+}).on("complete", function(res, raw){
+    console.info(res, raw);
+    request.close();
+});
   //await mobile.openPhoneAndSwipeToUnlock();
    //await send_message.openWhatsappAndSendMessage();
-  await options.showQuestions()
+  //await options.showQuestions()
     //await send_sms.sendSms()
     //await github.getGithubEvents()
     // var score = await daily_meeting.startDailyMeeting()
