@@ -1,0 +1,276 @@
+{
+    "type": "Announcement",
+    "pictures": [
+        {
+            "_id": "608ff4e3b4782de83f675f73",
+            "name": "chuteadechets.webp",
+            "alternativeText": "",
+            "caption": "",
+            "hash": "chuteadechets_e680c6b037",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "size": 15.62,
+            "width": 301,
+            "height": 196,
+            "url": "/uploads/chuteadechets_e680c6b037.webp",
+            "formats": {
+                "thumbnail": {
+                    "name": "thumbnail_chuteadechets.webp",
+                    "hash": "thumbnail_chuteadechets_e680c6b037",
+                    "ext": ".webp",
+                    "mime": "image/webp",
+                    "width": 240,
+                    "height": 156,
+                    "size": 10.69,
+                    "path": null,
+                    "url": "/uploads/thumbnail_chuteadechets_e680c6b037.webp"
+                }
+            },
+            "provider": "local",
+            "related": [
+                "608ff4e7b4782de83f675f74"
+            ],
+            "createdAt": "2021-05-03T13:04:35.049Z",
+            "updatedAt": "2021-05-03T13:04:39.093Z",
+            "__v": 0,
+            "id": "608ff4e3b4782de83f675f73"
+        }
+    ],
+    "_id": "608ff4e7b4782de83f675f74",
+    "long_description": "Dear Residents,\n\nPlease do not put too large bags in the chute to avoid blocking it.\n\nIf your bags are too big to use the chute, kindly bring them at SS1.\n\nThank you for your usual cooperation and have a great day,",
+    "short_description": "Garbage Chute 2",
+    "title": "Garbage Chute",
+    "commentary": [
+        {
+            "status": "visible",
+            "_id": "60900861b4782de83f675f83",
+            "commentary": "that would be horrible",
+            "__v": 0,
+            "users_permissions_user": {
+                "confirmed": true,
+                "blocked": false,
+                "_id": "608fedafb4782de83f675f6e",
+                "ppa": "no",
+                "unit": "C62",
+                "parking_2": 32,
+                "name": "Mohamed Elfakhfekh",
+                "address": "Tunisia",
+                "username": "mohamed.elfakhfekh",
+                "animals": true,
+                "locker": 31,
+                "parking": 31,
+                "email": "mohamed.elfakhfekh@dfc-software.com",
+                "provider": "local",
+                "createdAt": "2021-05-03T12:33:51.054Z",
+                "updatedAt": "2021-05-27T15:11:35.258Z",
+                "__v": 0,
+                "picture": {
+                    "_id": "608fed6fb4782de83f675f6d",
+                    "name": "AvatarMaker (1).png",
+                    "alternativeText": "",
+                    "caption": "",
+                    "hash": "Avatar_Maker_1_24198ab8e8",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "size": 64.35,
+                    "width": 400,
+                    "height": 400,
+                    "url": "/uploads/Avatar_Maker_1_24198ab8e8.png",
+                    "formats": {
+                        "thumbnail": {
+                            "name": "thumbnail_AvatarMaker (1).png",
+                            "hash": "thumbnail_Avatar_Maker_1_24198ab8e8",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "width": 156,
+                            "height": 156,
+                            "size": 25.55,
+                            "path": null,
+                            "url": "/uploads/thumbnail_Avatar_Maker_1_24198ab8e8.png"
+                        }
+                    },
+                    "provider": "local",
+                    "related": [
+                        "608fedafb4782de83f675f6e"
+                    ],
+                    "createdAt": "2021-05-03T12:32:47.831Z",
+                    "updatedAt": "2021-05-03T12:33:51.062Z",
+                    "__v": 0,
+                    "id": "608fed6fb4782de83f675f6d"
+                },
+                "role": "608fecdeb4782de83f675eea",
+                "publication": null,
+                "birthDate": "2021-05-18T00:00:00.000Z",
+                "city": "sfax",
+                "common_charge": "",
+                "description": "",
+                "phone": "",
+                "province": "sfax",
+                "quote": "",
+                "condominium": "60900636b4782de83f675f7d",
+                "id": "608fedafb4782de83f675f6e"
+            },
+            "id": "60900861b4782de83f675f83"
+        }
+    ],
+    "createdAt": "2021-05-03T13:04:39.083Z",
+    "updatedAt": "2021-05-28T13:36:46.307Z",
+    "__v": 0,
+    "users_permissions_user": {
+        "confirmed": true,
+        "blocked": false,
+        "_id": "608fedafb4782de83f675f6e",
+        "ppa": "no",
+        "unit": "C62",
+        "parking_2": 32,
+        "name": "Mohamed Elfakhfekh",
+        "address": "Tunisia",
+        "username": "mohamed.elfakhfekh",
+        "animals": true,
+        "locker": 31,
+        "parking": 31,
+        "email": "mohamed.elfakhfekh@dfc-software.com",
+        "provider": "local",
+        "createdAt": "2021-05-03T12:33:51.054Z",
+        "updatedAt": "2021-05-27T15:11:35.258Z",
+        "__v": 0,
+        "picture": {
+            "_id": "608fed6fb4782de83f675f6d",
+            "name": "AvatarMaker (1).png",
+            "alternativeText": "",
+            "caption": "",
+            "hash": "Avatar_Maker_1_24198ab8e8",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 64.35,
+            "width": 400,
+            "height": 400,
+            "url": "/uploads/Avatar_Maker_1_24198ab8e8.png",
+            "formats": {
+                "thumbnail": {
+                    "name": "thumbnail_AvatarMaker (1).png",
+                    "hash": "thumbnail_Avatar_Maker_1_24198ab8e8",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "width": 156,
+                    "height": 156,
+                    "size": 25.55,
+                    "path": null,
+                    "url": "/uploads/thumbnail_Avatar_Maker_1_24198ab8e8.png"
+                }
+            },
+            "provider": "local",
+            "related": [
+                "608fedafb4782de83f675f6e"
+            ],
+            "createdAt": "2021-05-03T12:32:47.831Z",
+            "updatedAt": "2021-05-03T12:33:51.062Z",
+            "__v": 0,
+            "id": "608fed6fb4782de83f675f6d"
+        },
+        "role": "608fecdeb4782de83f675eea",
+        "publication": null,
+        "birthDate": "2021-05-18T00:00:00.000Z",
+        "city": "sfax",
+        "common_charge": "",
+        "description": "",
+        "phone": "",
+        "province": "sfax",
+        "quote": "",
+        "condominium": "60900636b4782de83f675f7d",
+        "id": "608fedafb4782de83f675f6e"
+    },
+    "users_permissions_users": [],
+    "documents": [
+        {
+            "_id": "60907d50b4782de83f675f8d",
+            "name": "PV AGA 2020",
+            "is_folder": false,
+            "createdAt": "2021-05-03T22:46:40.697Z",
+            "updatedAt": "2021-05-21T10:20:55.090Z",
+            "__v": 0,
+            "content": {
+                "_id": "60907d46b4782de83f675f8c",
+                "name": "PV AGA 2020.pdf",
+                "alternativeText": "",
+                "caption": "",
+                "hash": "PV_AGA_2020_01d116af77",
+                "ext": ".pdf",
+                "mime": "application/pdf",
+                "size": 295.51,
+                "url": "/uploads/PV_AGA_2020_01d116af77.pdf",
+                "provider": "local",
+                "width": null,
+                "height": null,
+                "related": [
+                    "60907d50b4782de83f675f8d"
+                ],
+                "createdAt": "2021-05-03T22:46:30.428Z",
+                "updatedAt": "2021-05-03T22:46:40.713Z",
+                "__v": 0,
+                "id": "60907d46b4782de83f675f8c"
+            },
+            "post": "608ff4e7b4782de83f675f74",
+            "id": "60907d50b4782de83f675f8d"
+        }
+    ],
+    "condominiums": [
+        {
+            "posts": [
+                "608fef97b4782de83f675f71",
+                "608ff4e7b4782de83f675f74"
+            ],
+            "_id": "608feaebb4782de83f675ee4",
+            "localizations": [],
+            "name": "Rouge",
+            "street": "4939 Rue Jean-Talon O Côte",
+            "city": "Montreal",
+            "state_province": "Quebec",
+            "country": "Canada",
+            "zip_code": "QC H4P 1V5",
+            "locale": "en",
+            "createdAt": "2021-05-03T12:22:03.847Z",
+            "updatedAt": "2021-05-27T15:11:35.258Z",
+            "__v": 0,
+            "image": {
+                "_id": "608fec3db4782de83f675ee8",
+                "name": "sections_30520231_GBNodeListTemplateTypeList_sectionParams_24686431_cellBackgroundImage@iphone6plus.jpeg",
+                "alternativeText": "",
+                "caption": "",
+                "hash": "sections_30520231_GB_Node_List_Template_Type_List_section_Params_24686431_cell_Background_Image_iphone6plus_ce076207ef",
+                "ext": ".jpeg",
+                "mime": "image/jpeg",
+                "size": 43.71,
+                "width": 495,
+                "height": 390,
+                "url": "/uploads/sections_30520231_GB_Node_List_Template_Type_List_section_Params_24686431_cell_Background_Image_iphone6plus_ce076207ef.jpeg",
+                "formats": {
+                    "thumbnail": {
+                        "name": "thumbnail_sections_30520231_GBNodeListTemplateTypeList_sectionParams_24686431_cellBackgroundImage@iphone6plus.jpeg",
+                        "hash": "thumbnail_sections_30520231_GB_Node_List_Template_Type_List_section_Params_24686431_cell_Background_Image_iphone6plus_ce076207ef",
+                        "ext": ".jpeg",
+                        "mime": "image/jpeg",
+                        "width": 198,
+                        "height": 156,
+                        "size": 9.38,
+                        "path": null,
+                        "url": "/uploads/thumbnail_sections_30520231_GB_Node_List_Template_Type_List_section_Params_24686431_cell_Background_Image_iphone6plus_ce076207ef.jpeg"
+                    }
+                },
+                "provider": "local",
+                "related": [
+                    "608feaebb4782de83f675ee4"
+                ],
+                "createdAt": "2021-05-03T12:27:41.622Z",
+                "updatedAt": "2021-05-03T12:27:45.756Z",
+                "__v": 0,
+                "id": "608fec3db4782de83f675ee8"
+            },
+            "latitude": -73.6491922,
+            "longitude": 45.4978987,
+            "user": "60a27457c02f25dcff663e06",
+            "id": "608feaebb4782de83f675ee4"
+        }
+    ],
+    "id": "608ff4e7b4782de83f675f74"
+}
