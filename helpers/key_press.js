@@ -1,10 +1,14 @@
 var inquirer = require('inquirer');
 module.exports = {
     async keypress  () {
-        process.stdin.setRawMode(true)
-        return new Promise(resolve => process.stdin.once('data', () => {
-          process.stdin.setRawMode(true)
-          resolve()
-        }))
+        return new Promise((resolve) => {
+            document.addEventListener('keydown', onKeyHandler);
+            function onKeyHandler(e) {
+              if (e.keyCode === 13) {
+                document.removeEventListener('keydown', onKeyHandler);
+                resolve();
+              }
+            }
+          });
       }
 };
